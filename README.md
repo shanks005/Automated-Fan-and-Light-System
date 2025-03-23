@@ -24,4 +24,5 @@ My role was to write the assembly code and upload it on to the 8051 microcontrol
 - Infrared (IR) Sensors  
 - Fan and Light Control Circuits
 
-![image_alt]()
+## Circuit Diagram Preview
+![image_alt](https://github.com/shanks005/Automated-Fan-and-Light-System/blob/c97a81dd2fa80ccdd7c31a00b7242efb98294362/circuit_diagram.png)
