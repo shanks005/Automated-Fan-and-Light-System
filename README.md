@@ -3,6 +3,8 @@
 ## 📌 Project Overview
 For our Microcontrollers course Mini Project my teammates and I have designed a circuit simulation that automatically controls fans and lights based on the number of people entering a room. The system uses an **8051 microcontroller** and **infrared sensors** for person detection.
 
+## My role was to write the assembly code and upload it on to the 8051 microcontroller and peform the following requirements
+
 ## ⚙️ Functionality
 - **Person Detection:**  
   - An **infrared (IR) sensor** detects the presence of a person and sends a signal to the 8051 microcontroller.  
