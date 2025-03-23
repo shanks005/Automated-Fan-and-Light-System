@@ -1,0 +1,41 @@
+org 0000h
+MOV TMOD,#60H; setting in counter mode for timer 1  
+MOV TH1,#00H 
+SETB P3.5; port for timer 1  
+SETB TR1 
+RA1:; if one person enters the room 1 light and 2 fans turn on 
+MOV A,TL1 
+CJNE A,#01H,N1 
+JZ S1 
+N1: 
+JC RA1 
+S1: 
+SETB P1.0 
+SETB P1.1
+RA2:; if more than 10 people enter the room 2 lights and 4 fans turn on 
+MOV A,TL1 
+CJNE A,#0AH,N2 
+JZ S2
+N2: JC 
+RA2 S2: 
+SETB P1.2 
+SETB P1.3
+RA3:; if more than 20 people enter the room 3 lights and 6 fans turn on 
+MOV A,TL1 
+CJNE A,#14H,N3 
+JZ S3 
+N3: 
+JC RA1 
+S3: 
+SETB P1.4 
+SETB P1.5 
+RA4:; if more then 25 people enters the room 4 light and 8 fans turn on 
+MOV A,TL1 CJNE A,#19H,N4 
+JZ S4
+N4: 
+JC RA4 
+S4: 
+SETB P1.6 
+SETB P1.7 
+n:ajmp n 
+END
