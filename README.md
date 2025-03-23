@@ -1,7 +1,7 @@
 # Automated-Fan-and-Light-System
 
 ## 📌 Project Overview
-We have designed a system that automatically controls fans and lights based on the number of people entering a room. The system uses an **8051 microcontroller** and **infrared sensors** for person detection.
+For our Microcontrollers course Mini Project my teammates and I have designed a system that automatically controls fans and lights based on the number of people entering a room. The system uses an **8051 microcontroller** and **infrared sensors** for person detection.
 
 ## ⚙️ Functionality
 - **Person Detection:**  
